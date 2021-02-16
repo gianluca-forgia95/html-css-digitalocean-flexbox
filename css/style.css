@@ -17,7 +17,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #5b6987;
+  font-size: 25px;
   font-weight: bold;
+  padding: 20px 0;
 }
 .sponsor_business {
   display: flex;
@@ -27,10 +29,38 @@ body {
 
 }
 .img_sponsor {
-  width: calc((100% / 6) - 4px);
+  flex-basis: calc((100% / 6) - 4px);
 
 }
 .img_sponsor img {
  width: 100%;
+ padding: 0 10px;
 
+}
+.link_business {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.link_business a {
+  text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 978px) {
+  .img_sponsor {
+    flex-basis: calc((100% / 3) - 4px);
+  }
+  .title_business {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .img_sponsor {
+    flex-basis: calc((100% / 2) - 4px);
+  }
+  .title_business {
+    font-size: 12px;
+  }
 }
