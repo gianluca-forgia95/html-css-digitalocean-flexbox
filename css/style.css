@@ -6,5 +6,31 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: red;
+
+}
+/* Business */
+#business {
+  width: 80%;
+  margin: auto;
+}
+.title_business {
+  text-align: center;
+  text-transform: uppercase;
+  color: #5b6987;
+  font-weight: bold;
+}
+.sponsor_business {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.img_sponsor {
+  width: calc((100% / 6) - 4px);
+
+}
+.img_sponsor img {
+ width: 100%;
+
 }
